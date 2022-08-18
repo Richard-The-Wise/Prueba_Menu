@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="Random();">
+    Receta Random    
+</button>
+
+<script>
+
+    // var getJSON = function(url, callback) {
+
+    // var xmlhttprequest = new XMLHttpRequest();
+    // xmlhttprequest.open('GET', url, true);
+    // xmlhttprequest.responseType = 'json';
+
+    // xmlhttprequest.onload = function() {
+
+    //     var status = xmlhttprequest.status;
+
+    //     if (status == 200) {
+    //         callback(null, xmlhttprequest.response);
+    //     } else {
+    //         callback(status, xmlhttprequest.response);
+    //     }
+    // };
+
+    // xmlhttprequest.send();
+    // };
+
+    // getJSON('http://themealdb.com/api/json/v1/1/random.php',  function(err, data) {
+
+    // if (err != null) {
+    //     console.error(err);
+    // } else {
+
+    // var display = `User_ID: ${data.userId}
+    // ID: ${data.id}
+    // Title: ${data.title} 
+    // Completion_Status: ${data.completed}`;
+    // }
+    // console.log(display);
+    // });
+    function Random(){
+        let random = fetch("http://themealdb.com/api/json/v1/1/random.php");
+        console.log(random)
+    }
+    
+</script>
+</body>
+</html>
+
